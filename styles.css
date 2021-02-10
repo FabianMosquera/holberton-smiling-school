@@ -1,0 +1,280 @@
+body {
+    font-family: Source Sans Pro;
+}
+
+/* Header
+    ========= */
+
+
+.header {
+    background-image: url('./images/pic_1.jpg');
+}
+
+.header-2 {
+    background-image: url('./images/pic_2.jpg');
+}
+
+.header-3 {
+    background-image: url('./images/pic_3.jpg');
+}
+
+.header, .header-2, .header-3 {
+    background-repeat: no-repeat;
+    background-color: #071629;
+    background-size: 100%;
+}
+
+@media all and (max-width: 768px) {
+    .header, .header-2, .header-3 {
+        background-position: 40% 0%;
+        background-size: auto;
+        padding: 20px 4%;
+    }   
+}
+
+@media all and (max-width: 576px) {
+    .header, .header-2, .header-3 {
+        background-position: 54% 0%;
+        background-size: auto;
+        padding: 20px 4%;
+    }   
+    .header-title .title h1 {
+        font-size: 4rem;
+    }
+}
+.header-title {
+    margin-top: 10rem;
+}
+
+
+/* logo
+    ============== */
+
+@media all and (max-width: 576px) {
+    .navbar-brand {
+        margin-right: 35%;
+    }
+    
+    .navbar-brand img{
+
+        display: block;
+        margin: auto;
+        flex-basis: 100%;
+    }
+
+}
+/* menu
+    ============*/
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: transparent;
+    font-size: 24px;
+}
+
+/*  Navbar
+    ==============*/
+nav li,
+.style-letter {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.style-letter {
+    font-size: 1rem;
+}
+
+.list-menu {
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #C271FF !important;
+}
+
+/* Hover Uderline
+    ===============*/
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    position: relative;
+}
+  
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 0;
+    height: 0.1rem;
+}
+  
+  .nav-item:hover .nav-link::before {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+/* button
+    ============= */
+
+.badge-purple, .bg-purple {
+    background-color: #C271FF;
+}
+
+.badge-purple:hover {
+    opacity: 0.9;
+}
+
+p.feature {
+    line-height: 34px;
+}
+
+
+.mt-8 {
+    margin-top: 8rem;
+}
+
+.header-title .purple,
+.purple {
+    color: #C271FF;
+}
+
+/* carrusel
+    ========= */
+
+.style-blockquote,
+.style-video {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+}
+.style-blockquote {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.style-video {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(7, 22, 41, 0.501584);
+}
+
+@media all and (max-width: 576px) { 
+    .people .carousel-control-next,
+    .people .carousel-control-prev {
+        align-items: flex-start;
+    }
+}
+
+/* Smile Section
+    ============*/
+
+.w-smile {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.85;
+}
+
+/* Pricing Page
+    ==============*/
+
+
+
+/* button price
+    ===============*/
+.box {
+    width: 162px;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+/* Courses template
+    ==============*/
+
+.text-coiny {
+    font-family: Coiny;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 3rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    margin: auto;
+    left: 30px;
+    top: 36px;
+}
+
+::placeholder { 
+    color: white !important;
+}
+
+.form-group img { 
+    opacity: 1;
+}
+
+
+.form-control, .form-control:focus {
+    background-color: #d195ff;
+    color: white;
+    font-size: 23px;
+    opacity: 0.5;
+}
+
+/* Dropdown
+    ==============*/
+
+.btn-purple, .btn-purple:focus, .btn-purple:active, .btn-purple:hover {
+    text-align: left;
+    background-color: #d195ff;
+    color: white;
+    border-color: #d195ff;
+    height: 50px;
+    font-size: 23px;
+    opacity: 0.5;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 10px;
+}
+
+.dropdown-menu.show {
+    width: 100%;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #C271FF;
+    background-color: white;
+}
+
+/* videos section
+    ==========*/
+
+.f-16 {
+    font-size: 1rem;
+}
